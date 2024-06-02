@@ -1,19 +1,18 @@
-let num = document.getElementById("input").value;
+    function Start(){
+        num = document.getElementById("num").value;
+        r = Math.floor(Math.random() * 10);
+        document.getElementById("me").innerHTML = num;
+        document.getElementById("com").innerHTML = r;
+    
+    
+        if(num == r){
+        document.getElementById("result").innerHTML = "! YOU WON !";
+        }
+        else{
+        document.getElementById("result").innerHTML = "! YOU LOSE !";
+        }
+    }
 
-function Start(){
-    r = Math.floor(Math.random() * 10);
-    document.getElementById("me").innerHTML = num;
-    document.getElementById("com").innerHTML = r;
-    if(num == r){
-    document.getElementById("result").innerHTML = "! YOU WON !";
-}
-else{
-    document.getElementById("result").innerHTML = "! YOU LOSE !";
-}
-console.log(r);
-console.log(num);
-
- }
 
 
 
