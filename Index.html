@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Game</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Prediction Game</h1>
+        <div class="input">
+            <input type="number" id="input" placeholder="TAP ME">
+        </div>
+        <div class="buttons">
+            <button title="1 to 10">Easy</button>
+            <button title="1 to 50">Medium</button>
+            <button title="1 to 100">Hard</button>
+        </div>
+
+        <div class="table">
+            <table>
+                <tr>
+                    <th colspan="2">Numbers</th>
+                </tr>
+                <tr>
+                    <th>Your</th>
+                    <th>Computer</th>
+                </tr>
+                <tr>
+                    <td id="me"></td>
+                    <td id="com"></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div id="result"></div>
+
+        <div class="start">
+            <button onclick="Start()" id="str">START</button>
+        </div>
+    </div>
+
+
+    <script src="Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+*{
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background: url("images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    width: 30%;
+    height: 60%;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.heading{
+    text-align: center;
+    letter-spacing: 1vh;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.buttons button{
+    background: rgba(255, 255, 255, 0.676);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    width: 30%; 
+    color:#020947;
+    font-weight: 800;
+}
+.buttons button:hover{
+    background: rgba(255, 255, 255, 0.57);
+    color:#4856d5;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.input input{
+    border-radius: 20px;
+    border:none;
+    background: rgba(255, 255, 255, 0);
+    font-size: 24px;
+    text-align: center;
+    color:#fff;
+}
+::placeholder{
+    color: #ffe4e4;
+    letter-spacing: 2vh;
+}
+.table{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+th,td{
+    letter-spacing: 0.5vh;
+    font-size: 20px;
+    width: 100%;
+    padding: 5px 70px 5px 70px;
+    border: 1px solid #fff;
+    border-collapse:collapse;
+    border-radius: 10px;
+    text-align: center;
+}
+#result{
+    color: rgba(85, 229, 85, 0.942);
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-weight: 700;
+    letter-spacing: 1vh;
+}
+.resultLose{
+    color: rgba(229, 95, 85, 0.942);
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.start{
+    display: flex;
+    justify-content: center;
+}
+.start button{
+    background-color: rgba(59, 169, 49, 0.676);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    width: 30%; 
+    color:#020947;
+    font-weight: 800;
+    transition: 0.3s ease-in;
+}
+.start button:hover{
+    color:#fff;
+    background-color: rgba(37, 160, 26, 0.46);
+}
