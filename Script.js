@@ -1,11 +1,13 @@
     function Start(){
         num = document.getElementById("num").value;
-        r = Math.floor(Math.random() * 10);
+        r = Math.floor(Math.random() * 11);
         document.getElementById("me").innerHTML = num;
         document.getElementById("com").innerHTML = r;
-    
-    
-        if(num == r){
+        if(isNaN(num) || num < 1 || num > 10){
+            document.getElementById("result").innerHTML = "Enter Any Value(1-10)";
+            document.getElementById("com").innerHTML = "";
+        }
+        else if(num == r){
         document.getElementById("result").innerHTML = "! YOU WON !";
         }
         else{
