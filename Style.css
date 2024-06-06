@@ -24,7 +24,7 @@ body {
 
 .container {
     max-width: 50%;
-    height: 60%;
+    height: 65%;
     border-radius: 10px;
     color: #fff;
     padding: 10px;
@@ -36,9 +36,12 @@ body {
 }
 
 .heading {
+    font-weight: 800;
     text-align: center;
     letter-spacing: 1vh;
+   
 }
+
 
 .buttons {
     display: flex;
@@ -67,7 +70,6 @@ body {
     justify-content: center;
     margin-bottom: 5%;
 }
-
 #num {
     width: 100%;
 }
@@ -98,7 +100,7 @@ td {
     font-size: 20px;
     width: 100%;
     padding: 5px 70px 5px 70px;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-collapse: collapse;
     border-radius: 10px;
     text-align: center;
