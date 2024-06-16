@@ -4,7 +4,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
         r = Math.floor(Math.random() * 11);
         document.getElementById("me").innerHTML = num;
         document.getElementById("com").innerHTML = r;
-        if(isNaN(num) || num < 1 || num > 10){
+        if(isNaN(num) || num < 1 || num > 11){
             document.getElementById("result").innerHTML = "Enter Any Value(1-10)";
             document.getElementById("result").style.color= "red";
 
@@ -18,6 +18,8 @@ document.addEventListener('contextmenu', event => event.preventDefault());
         }
         else{
         document.getElementById("result").innerHTML = "! YOU LOSE !";
+        document.getElementById("result").style.color= "red";
+
         }
     }
 
